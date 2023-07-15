@@ -14,10 +14,10 @@ class BookingSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Booking
-        fields = ['name', 'no_of_guests', 'bookingDate']
+        fields = '__all__'
 
 class MenuItemSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = MenuItem
-        fields = ['title', 'bookingDate', 'price', 'inventory']
+        fields = ['title', 'price', 'inventory']
